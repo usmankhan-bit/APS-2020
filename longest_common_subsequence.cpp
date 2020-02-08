@@ -64,10 +64,7 @@ void max_common_subsequence(string s1,string s2)
     
     cout<<seq<<endl;
 
-    for(int i=0;i<str.length();i+=2)
-        cout<<str[i];
-
-    cout<<endl;
+    
 }
 
 
