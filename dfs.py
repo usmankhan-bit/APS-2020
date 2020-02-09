@@ -24,6 +24,3 @@ for _ in range(edj):
     addEdge(x,y)
 s=int(input())
 dfs(s,visited)
-
-
-
