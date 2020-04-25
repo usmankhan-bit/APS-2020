@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-    int n=5;
-    int arr[]={2,3,7,8,10};
-    int sum=13;
+    int n=8;
+    int arr[]={1,3,5,7,9,11,13,15};
+    int sum=30;
     bool matrix[n+1][sum+1];
 
     memset(matrix,0,sizeof(matrix));
