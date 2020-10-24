@@ -1,6 +1,6 @@
-#include<stdio.h>
 #include<string.h>
 void compute(char str[],int n)
+#include<stdio.h>
 {
     for(int len=1;len<=n;len++)
     {

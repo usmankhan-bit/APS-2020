@@ -13,6 +13,7 @@ NODE * insert_at_start(NODE * start);
 NODE * insert_at_end(NODE * start);
 NODE * delete_from_start(NODE * start);
 NODE * delete_from_end(NODE * start);
+NODE * sorted_insert(NODE *start);
 NODE * getnode();
 void getdata(NODE *);
 void display_list(NODE *start);
@@ -45,6 +46,8 @@ int main() {
                     break;
             case 6: printf("Exiting program\n\n");
                     exit(0);
+	    case 7: start = sorted_insert(start);
+		    break;
         }
     }
     return 0;
@@ -147,6 +150,24 @@ NODE * delete_from_end(NODE * start) {
         currnodes--;
     }
     return start;
+}
+
+NODE * sorted_insert(NODE *start){
+	NODE *current = start;
+	NODE *nextnode = NULL;
+	NODE *newnode = getnode();
+	if(newnode == NULL)
+		return start;
+	getdata(newnode);
+	while(current->next!=NULL && current->data < newnode->data){
+		current = current->next;	
+	}
+	nextnode = current->next;
+	current->next = newnode;
+	newnode->next = nextnode;
+	currnodes++;
+	return start;
+
 }
 
 

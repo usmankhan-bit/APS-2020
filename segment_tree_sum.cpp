@@ -23,7 +23,7 @@ void build(int node, int start, int end)
     }
 }
 
-void update(int node, int start, int end, int idx, int val)
+/*void update(int node, int start, int end, int idx, int val)
 {
     if(start == end)
     {
@@ -47,7 +47,7 @@ void update(int node, int start, int end, int idx, int val)
         // Internal node will have the sum of both of its children
         tree[node] = tree[2*node] + tree[2*node+1];
     }
-}
+}*/
 
 int query(int node, int start, int end, int l, int r)
 {

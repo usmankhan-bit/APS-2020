@@ -4,7 +4,7 @@
 
 using namespace std ;
 
-int arr[] = {3 , 4 , 5 , 5 , 6 , 6 , 7 , 8 , 9 } ;
+int arr[] = {2, 3 , 4 , 5 , 6 , 6 , 7 , 8 , 9 } ;
 vector<int> V( arr , arr + 9 ) ; // note that the vector is sorted .
 int main ( )
 {

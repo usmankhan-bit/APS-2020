@@ -50,7 +50,7 @@ class Graph
             }
         }
 
-        void DFSUtil(int v,bool visited[])
+        void DFSUtil(int v,bool *visited)
         {
             visited[v]=true;
             cout<<v<<" ";
@@ -95,7 +95,7 @@ int main()
 
     // g.BFS(2);
     // cout<<endl;
-    // g.DFS(2);
+     g.DFS(2);
 
-    g.print();
+    //g.print();
 }

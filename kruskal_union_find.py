@@ -8,6 +8,7 @@ def initialize_union_array(N):
 
 
 def union(u,v):
+
     global union_array
     value = union_array[v]
     replace_value = union_array[u]

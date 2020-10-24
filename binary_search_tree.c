@@ -120,7 +120,7 @@ TREE * delete_from_bst(TREE * root, int data)
         // Process of finding the inorder successor
         successor = currnode->right;
         while(successor->left != NULL)
-        successor = successor->left;
+        	successor = successor->left;
         successor->left = currnode->left;
         p = currnode->right;
     }
